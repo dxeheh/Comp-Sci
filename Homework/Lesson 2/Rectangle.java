@@ -16,6 +16,6 @@ public class Rectangle {
    return myWidth*2 + myHeight*2;
   }
   public String toString(){
-   return String.format("width     : %1.3f\nheight    : %1.3f\narea      : %1.3f\nperimeter : %1.3f", myWidth, myHeight, getArea(), getPerimeter());
+   return String.format("width     : %.3f\nheight    : %.3f\narea      : %.3f\nperimeter : %.3f", myWidth, myHeight, getArea(), getPerimeter());
   }
 }
