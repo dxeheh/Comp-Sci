@@ -1,8 +1,3 @@
-/*----------------
- * Ryan Earll
- * Lesson 2, HW 1
- * ---------------*/
-
 public class Rectangle {
   private double myWidth;
   private double myHeight;
