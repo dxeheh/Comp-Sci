@@ -2,7 +2,7 @@ public class BHSPoint{
  private int myX;
  private int myY;
  public BHSPoint(){
-  myX=0;
+  myX = 0;
   myY = 0;
  }
  public BHSPoint(int x, int y){
