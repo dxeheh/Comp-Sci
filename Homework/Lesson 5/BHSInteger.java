@@ -1,9 +1,14 @@
+/*---------------
+ * Ryan Earll
+ * Lesson 5, HW 1
+  ---------------*/
 public class BHSInteger {
   int value;
   public BHSInteger(int x){value = x;}
   public int getInteger(){return value;}
   public String toString(){return ""+value;}
   public String getHexString(){
+    if(value<1)return "0";
     String h = "0123456789ABCDEF";
     String r = "";
     int x = value;
