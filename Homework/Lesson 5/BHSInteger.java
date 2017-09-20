@@ -1,7 +1,3 @@
-/*---------------
- * Ryan Earll
- * Lesson 5, HW 1
-  ---------------*/
 public class BHSInteger {
   int value;
   public BHSInteger(int x){value = x;}
