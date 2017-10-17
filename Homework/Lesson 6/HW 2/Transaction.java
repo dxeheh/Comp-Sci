@@ -1,17 +1,14 @@
-import java.util.Date;
-import java.text.SimpleDateFormat;
 public class Transaction {
+  
   private char myType;
-  private double myAmount;
-  private static double myNewBalance;
+  private double myAmount,myNewBalance;
+  private static double myOverallBalance;
   private String myDate;
   
-  public Transaction(char type, double amount,  Date date) {
+  public Transaction(char type, double amount,  String date) {
     myType = type;
     myAmount = amount;
-    myNewBalance = 0;
-    SimpleDateFormat sdf = new SimpleDateFormat("MM-dd-yyyy");
-    String myDate = sdf.format(date);
+    myDate = date;
   }
   
   public String getDate(){return myDate;}
@@ -22,4 +19,6 @@ public class Transaction {
   
   public double getAmount(){return myAmount;}
   public void setAmount(double amount){myAmount = amount;}
+  
+  public double getNewBalance(){return myNewBalance;}
 }
