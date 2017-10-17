@@ -5,7 +5,7 @@ public class Transaction {
   private static double myOverallBalance;
   private String myDate;
   
-  public Transaction(char type, double amount,  String date) {
+  public Transaction(char type, double amount, String date) {
     myType = type;
     myAmount = amount;
     myDate = date;
