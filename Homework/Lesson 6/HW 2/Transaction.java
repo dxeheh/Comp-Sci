@@ -6,11 +6,11 @@ public class Transaction {
   private String myDate;
   
   public Transaction(char type, double amount, String date) {
-    myType = type;
+    myType = Character.toUpperCase(type);
     myAmount = amount;
     myDate = date;
-    if (type == "D".charAt(0)) myOverallBalance += amount;
-    else if (type == "W".charAt(0)) myOverallBalance -= amount;
+    if (myType == 'D') myOverallBalance += amount;
+    else if (myType == 'W') myOverallBalance -= amount;
     myNewBalance = myOverallBalance;
   }
   
