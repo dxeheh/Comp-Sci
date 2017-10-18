@@ -9,6 +9,9 @@ public class Transaction {
     myType = type;
     myAmount = amount;
     myDate = date;
+    if (type == "D".charAt(0)) myOverallBalance += amount;
+    else if (type == "W".charAt(0)) myOverallBalance -= amount;
+    myNewBalance = myOverallBalance;
   }
   
   public String getDate(){return myDate;}
