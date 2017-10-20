@@ -13,7 +13,7 @@ public class Account {
   private double myAnnualInterestRate;
   private String myDateCreated;
   private ArrayList<Transaction> myTransactions;
-  SimpleDateFormat sdf;
+  private SimpleDateFormat sdf;
   
   public Account() { 
     this("None", 0, 0, 0);
