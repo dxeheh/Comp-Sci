@@ -29,7 +29,7 @@ public class Account {
    myTransactions = new ArrayList<Transaction>();
    
    if (balance > 0)deposit(balance);
-   else if (balance < 0) withdraw(balance);
+   else if (balance < 0) withdraw(balance*(-1));
   }
   
   public String getName(){return myName;}
