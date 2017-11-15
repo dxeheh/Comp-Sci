@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Recurse5 {
+public class Recurse6 {
   
   public static boolean p(String s){
     if (s.length() == 0 || s.length() == 1) return true;
@@ -7,8 +7,8 @@ public class Recurse5 {
     return false;
   }
   
-  public static void main(String[] args) { 
-    if (p(new Scanner(System.in).nextLine().toLowerCase())) System.out.println("yes");
+  public static void main(String[] args) {
+    if (p(new Scanner(System.in).nextLine().toLowerCase().replaceAll("\\s+",""))) System.out.println("yes");
     else System.out.println("no");
   }
 }
